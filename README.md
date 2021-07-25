@@ -8,7 +8,7 @@ Right now this package **only** wraps around the ```TextButton``` widget. Suppor
 First add the dependency into your ```pubspec.yaml```:
 ```
 dependencies:
-    flutter_loading_button: 0.0.1
+    flutter_loading_button: ^0.0.1
 ```
 
 **OR**
@@ -49,6 +49,21 @@ LoadingButton(
         constraints: const BoxConstraints(maxWidth: 200),
         child: const LinearProgressIndicator(),
     ),
+)
+```
+
+Since ```LoadingButton``` currently wraps around ```TextButton``` it is also to supported to call ```LoadingButton.icon()```:
+
+```
+LoadingButton.icon(
+    // This needs to be async
+    onPressed: () async {
+        await Future.delayed(const Duration(seconds: 3), () => print('Task done!'),
+        );
+    },
+    child: const Text('Button'),
+    icon: const Icon(Icons.settings),
+    loadingWidget: const LinearProgressIndicator(),
 )
 ```
 
