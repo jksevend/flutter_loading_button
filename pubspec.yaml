@@ -2,6 +2,7 @@ name: flutter_loading_button
 description: A package wrapper around material buttons to display a loading widget while waiting for the onPressed method to finish
 version: 0.0.1
 homepage:
+repository: https://github.com/jksevend/flutter_loading_button
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
