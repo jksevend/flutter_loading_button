@@ -8,7 +8,7 @@ Right now this package **only** wraps around the ```TextButton``` widget. Suppor
 First add the dependency into your ```pubspec.yaml```:
 ```
 dependencies:
-    flutter_loading_button: ^0.0.1
+    flutter_loading_button: ^0.0.2
 ```
 
 **OR**
